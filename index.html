@@ -1,0 +1,36 @@
+<h1>Vielen Dank für Ihre Teilnahme!</h1>
+ 
+<br><br>
+Nehme an zahlreichen Gewinnspielen teil und unterstützte die Forschung am Fachgebiet ise!<br>
+Sei Teil unsers Subjectpools und erhalte so die Möglichkeit Einblicke in unsere Experimente zu bekommen. <br><br>
+ 
+<style>#subscription-form .hidden{display:none}#subscription-form .mailValidation{font-size:.8em;font-style:italic}#subscription-form .submit{font-family:inherit;cursor:pointer;font-size:100%;padding:.5em 1em;border:1px solid #999;border:transparent;text-decoration:none;border-radius:2px;background:#005285;color:#fff;display:inline-block;width:auto}</style>
+<div id="subscription-form">
+      <div class="form">
+              <div class="mailValidation hidden">Bitte geben Sie eine E-Mail Adresse an</div>
+                  <label>Name</label>
+                      <input type="text" name="name" />
+                       
+                          <label>E-Mail Adresse*</label>
+                             
+                              <input type="email" name="email" />
+                                  <div class="submit">Abschicken</div>
+                                   
+                                    </div>
+                                      <div class="success hidden">
+                                              Erfolgreich angemeldet!
+                                                </div>
+                                                  <div class="error hidden">
+                                                          Es ist ein Fehler aufgetreten.
+                                                            </div>
+</div>
+<script>var submitForm=function(e){e.preventDefault();var t=new XMLHttpRequest,s=document.querySelector("#subscription-form input[name='name']").value,o=document.querySelector("#subscription-form input[name='email']").value;/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(o)?(t.open("POST","/sendy/subscribe"),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),t.onload=function(){200===t.status?(document.querySelector("#subscription-form .form").classList.add("hidden"),document.querySelector("#subscription-form .success").classList.remove("hidden")):200!==t.status&&(document.querySelector("#subscription-form .form").classList.add("hidden"),document.querySelector("#subscription-form .error").classList.remove("hidden"))},t.send(encodeURI("name="+s+"&email="+o+"&list=Da8ExDAT93Ns763QRHqD6uxg"))):document.querySelector("#subscription-form .mailValidation").classList.remove("hidden")};document.querySelector("#subscription-form .submit").addEventListener("click",submitForm);</script>
+<br><br>
+Du kannst dich jederzeit wieder abmelden und deine E-Mail-Adresse wird vertraulich und ausschließlich für Experimente verwendet.
+<br><br>
+ 
+ 
+<!-- Hier evtl. noch Zweck der Studie, Ansprechpartner, etc. -->
+<p>Ihre Antworten wurden gespeichert, Sie können das Browser-Fenster nun schließen.</p>
+<br><br><hr>
+<p style="text-align:left"><img src="logo.ger.png" alt="ISE_Logo" style="margin-left: 10px; width:120px"><img src="tud_logo.png" alt="TU_Logo" style="margin-left: 350px; width:120px" ></p>
